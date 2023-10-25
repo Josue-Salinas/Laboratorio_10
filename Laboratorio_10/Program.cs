@@ -37,7 +37,7 @@ namespace Laboratorio_10
                         opcion = mWatch_8000();
                         break;
                     case 5:
-                        opcion = reporte_fin();
+                        opcion = reporte_final();
                         break;
 
                 }
@@ -57,12 +57,10 @@ namespace Laboratorio_10
             Console.WriteLine("================================");
             Console.WriteLine("Ingrese una opción:");
             return getOpcion();
-
         }
 
         public static int mPhone_3000()
         {
-
             Console.Clear();
             Console.WriteLine("================================");
             Console.WriteLine("Registrar Venta de mPhone 3000");
@@ -186,7 +184,6 @@ namespace Laboratorio_10
             {
                 return Productos_mphone();
             }
-
             return opcion;
         }
         public static int MAPBrook_3800()
@@ -313,13 +310,12 @@ namespace Laboratorio_10
             {
                 return Productos_mphone();
             }
-
-
             return opcion;
         }
 
-        public static int reporte_fin()
+        public static int reporte_final()
         {
+            total = mPhone3000 + mPad3500 + MAPBrook3800 + mWatch8000;
             Console.WriteLine("================================");
             Console.WriteLine("Reporte Final");
             Console.WriteLine("================================");
@@ -330,7 +326,6 @@ namespace Laboratorio_10
             Console.WriteLine($"MAPBrooks             |{MAPBrook3800}");
             Console.WriteLine($"mWatches              |{mWatch8000}");
             Console.WriteLine("--------------------------------");
-            total = mPhone3000 + mPad3500 + MAPBrook3800 + mWatch8000;
             Console.WriteLine($"Total                 |{total}");
             Console.WriteLine("================================");
             Console.WriteLine("¡Hasta luego!");
